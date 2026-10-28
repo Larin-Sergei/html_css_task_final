@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Furniro — мебель и идеи для уютного дома.">
+  <title>Furniro — мебель для вашего дома</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="#" aria-label="Furniro — на главную">
+        <span class="logo__mark" aria-hidden="true">F</span>
+        <span>Furniro</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#home">Главная</a>
+        <a href="#products">Каталог</a>
+        <a href="#inspiration">Вдохновение</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="cart-open" type="button" aria-label="Открыть корзину">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero__image" role="img" aria-label="Светлая гостиная с современной мебелью"></div>
+      <div class="container hero__container">
+        <div class="hero-card">
+          <p class="eyebrow">Новая коллекция</p>
+          <h1>Откройте для себя уют и стиль</h1>
+          <p class="hero-card__text">Мебель, которая превращает пространство в место, куда хочется возвращаться.</p>
+          <a class="button button--primary" href="#products">В каталог <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero__pagination" aria-label="Слайд 1 из 3">
+        <span class="dot dot--active"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </section>
+
+    <section class="categories section" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Найди свой стиль</p>
+          <h2 id="categories-title">Мебель для каждой комнаты</h2>
+          <p>Продуманные детали и натуральные оттенки для вашего дома.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#products">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Уютная гостиная в нейтральных оттенках" loading="lazy">
+            <span>Гостиная</span>
+          </a>
+          <a class="category-card" href="#products">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Современная обеденная зона" loading="lazy">
+            <span>Столовая</span>
+          </a>
+          <a class="category-card" href="#products">
+            <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=900&q=85" alt="Спальня с мягким естественным освещением" loading="lazy">
+            <span>Спальня</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section section--soft" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Выбор дизайнеров</p>
+          <h2 id="products-title">Популярные товары</h2>
+          <p>Функциональность, комфорт и современный дизайн.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-id="sofa" data-name="Диван Norr" data-price="58900">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85" alt="Зелёный современный диван" loading="lazy">
+              <span class="product-tag">Хит</span>
+              <button class="favorite-button" type="button" aria-label="Добавить Диван Norr в избранное" aria-pressed="false">♡</button>
+            </div>
+            <div class="product-card__info">
+              <h3>Диван Norr</h3><p>Мягкая мебель</p>
+              <div class="product-card__bottom"><strong>58 900 ₽</strong><button class="add-button" type="button">В корзину <span aria-hidden="true">+</span></button></div>
+            </div>
+          </article>
+          <article class="product-card" data-id="chair" data-name="Кресло Luma" data-price="24900">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=85" alt="Дизайнерское кресло для гостиной" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=85'">
+              <button class="favorite-button" type="button" aria-label="Добавить Кресло Luma в избранное" aria-pressed="false">♡</button>
+            </div>
+            <div class="product-card__info">
+              <h3>Кресло Luma</h3><p>Кресла</p>
+              <div class="product-card__bottom"><strong>24 900 ₽</strong><button class="add-button" type="button">В корзину <span aria-hidden="true">+</span></button></div>
+            </div>
+          </article>
+          <article class="product-card" data-id="table" data-name="Стол Aster" data-price="31900">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=900&q=85" alt="Деревянный стол в минималистичном интерьере" loading="lazy">
+              <span class="product-tag product-tag--new">Новинка</span>
+              <button class="favorite-button" type="button" aria-label="Добавить Стол Aster в избранное" aria-pressed="false">♡</button>
+            </div>
+            <div class="product-card__info">
+              <h3>Стол Aster</h3><p>Столы</p>
+              <div class="product-card__bottom"><strong>31 900 ₽</strong><button class="add-button" type="button">В корзину <span aria-hidden="true">+</span></button></div>
+            </div>
+          </article>
+          <article class="product-card" data-id="lamp" data-name="Светильник Halo" data-price="7900">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85" alt="Современный настольный светильник" loading="lazy">
+              <button class="favorite-button" type="button" aria-label="Добавить Светильник Halo в избранное" aria-pressed="false">♡</button>
+            </div>
+            <div class="product-card__info">
+              <h3>Светильник Halo</h3><p>Освещение</p>
+              <div class="product-card__bottom"><strong>7 900 ₽</strong><button class="add-button" type="button">В корзину <span aria-hidden="true">+</span></button></div>
+            </div>
+          </article>
+        </div>
+        <p class="catalog-note" id="catalog-note" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="inspiration section" id="inspiration" aria-labelledby="inspiration-title">
+      <div class="container inspiration__grid">
+        <div class="inspiration__content">
+          <p class="eyebrow">Идеи для дома</p>
+          <h2 id="inspiration-title">Пространство, которое вдохновляет</h2>
+          <p>Сочетайте натуральные материалы, спокойные оттенки и предметы с характером. Начните с одной детали — и создайте интерьер, который рассказывает вашу историю.</p>
+          <a class="button button--outline" href="#categories-title">Найти вдохновение <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="inspiration__photo">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Светлая гостиная с натуральными материалами" loading="lazy">
+          <figcaption>Тепло натуральных текстур</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="faq section section--soft" aria-labelledby="faq-title">
+      <div class="container faq__container">
+        <div class="section-heading">
+          <p class="eyebrow">Полезная информация</p>
+          <h2 id="faq-title">Частые вопросы</h2>
+        </div>
+        <details class="faq-item">
+          <summary>Как оформить заказ?</summary>
+          <p>Добавьте понравившиеся товары в корзину и проверьте список покупок. В этой учебной версии оформление заказа демонстрационное.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Можно ли выбрать другой цвет?</summary>
+          <p>Для большинства моделей доступны разные варианты отделки. Подробности можно уточнить у консультанта.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Как ухаживать за мебелью?</summary>
+          <p>Используйте средства, подходящие для материала изделия, и следуйте рекомендациям производителя.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="logo logo--footer" href="#"><span class="logo__mark" aria-hidden="true">F</span><span>Furniro</span></a>
+        <p>Создаём пространство, в котором приятно жить.</p>
+      </div>
+      <div class="footer__links">
+        <h2>Навигация</h2>
+        <a href="#home">Главная</a><a href="#products">Каталог</a><a href="#inspiration">Вдохновение</a>
+      </div>
+      <div class="footer__contacts">
+        <h2>Связаться с нами</h2>
+        <p>hello@furniro.example</p><p>Пн–Пт, 10:00–18:00</p>
+      </div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 Furniro. Учебный проект HTML/CSS.</p><a href="#home">Наверх ↑</a></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-dialog__header">
+      <h2 id="cart-title">Ваша корзина</h2>
+      <button class="icon-button cart-close" id="cart-close" type="button" aria-label="Закрыть корзину">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"><p class="cart-empty">Пока здесь пусто. Добавьте что-нибудь красивое!</p></div>
+    <div class="cart-dialog__footer">
+      <p>Итого: <strong id="cart-total">0 ₽</strong></p>
+      <button class="button button--primary" id="checkout-button" type="button">Оформить заказ</button>
+    </div>
+  </dialog>
+</body>
+</html>
